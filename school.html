@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javaScript</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1>School,Course and Subject Combinations</h1>
+    <table id="displayTable" class="table">
+
+    </table>
+      <script>
+          var text = [
+              {"school":"UNILAG", "course":"Political science" ,"subject":"Eng,Yor,Govt,Lit"},
+              {"school":"UNIBEN", "course":"Agric science" ,"subject":"Eng,Agric,Govt,Biology"},
+              {"school":"Babcock", "course":"International Relations","subject":"Eng,Lit,Govt,Geography"},
+              {"school":"Fountain", "course":"Accountancy","subject":"Eng,Acct,Commerce,maths"},
+              {"school":"UNILORIN", "course":"computer Science","subject":"Eng,computer,chemistry,physics",},
+              {"school":"UI","course":"CLA","subject":"Eng,Lit,Govt,Yoruba"}, 
+          ];
+         
+          var table = document.querySelector("#displayTable");
+          for (var i = 0; i < text.length; i++) {
+            var row = table.insertRow(i);
+
+            var cell1 = row.insertCell(0);
+            var cell2 =row.insertCell(1);
+            var cell3 =row.insertCell(2);
+            cell1.innerHTML = text[i].school;
+            cell2.innerHTML = text[i].course;
+            cell3.innerHTML = text[i].subject;
+        }
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javaScript</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="nigeria-logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+          State and capital
+        </a>
+      </nav>
+    <h1>State and capital</h1>
+    <table id="displayTable" class="table">
+
+    </table>
+      <script>
+          var text = [
+              {"state":"Adamawa", "capital":"Yola"},
+              {"state":"Abia", "capital":"umuahia"},
+              {"state":"Akwa Ibom", "capital":"Uyo"},
+              {"state":"Anambra", "capital":"Awka"},
+              {"state":"Bauchi", "capital":"bauchi"},
+              {"state":"Bayelsa", "capital":"yenogoa"},
+              {"state":"Benue", "capital":"makurdi"},
+              {"state":"Borno", "capital":"Maiduguri"},
+              {"state":"Cross River", "capital":"Calabar"},
+              {"state":"Delta", "capital":"Asaba"},
+              {"state":"Ebonyi", "capital":"Abakaliki"},
+              {"state":"Lagos", "capital":"Ikeja"},
+              {"state":"Oyo", "capital":"Ibadan"},
+              {"state":"plateau", "capital":"jos"},
+              {"state":"Ebonyi", "capital":"Abakaliki"},
+              {"state":"Edo", "capital":"Benin"},
+              {"state":"Ekiti", "capital":"Ado Ekiti"},
+              {"state":"Enugu", "capital":"Enugu"},
+              {"state":"Gombe", "capital":"Gombe"},
+              {"state":"Imo", "capital":"Owerri"},
+              {"state":"Jigawa", "capital":"Dutse"},
+              {"state":"Kaduna", "capital":"Kaduna"},
+              {"state":"Kano", "capital":"Kano"},
+              {"state":"Katsina", "capital":"Katsina"},
+              {"state":"Kebbi", "capital":"Birnin Kebbi"},
+              {"state":"Kogi", "capital":"Lokoja"},
+              {"state":"Kwara", "capital":"Ilorin"},
+              {"state":"Lagos", "capital":"Ikeja"},
+              {"state":"Nasarawa", "capital":"Lafia"},
+              {"state":"Niger", "capital":"Minna"},
+              {"state":"Ogun", "capital":"Abeokuta"},
+              {"state":"Ondo", "capital":"Akure"},
+              {"state":"Osun", "capital":"Oshogbo"},
+              {"state":"Oyo", "capital":"Ibadan"},
+              {"state":"Plateau", "capital":"Jos"},
+              {"state":"River", "capital":"Port Harcort"},
+              {"state":"Sokoto", "capital":"Sokoto"},
+              {"state":"Taraba", "capital":"Jalingo"},
+              {"state":"Yobe", "capital":"Damaturu"},
+              {"state":"Zamfara", "capital":"Gusau"},
+              {"state":"FCT", "capital":"Abuja"},
+              
+              
+              
+              
+
+          ];
+         
+          var table = document.querySelector("#displayTable");
+          for (var i = 0; i < text.length; i++) {
+            var row = table.insertRow(i);
+
+            var cell1 = row.insertCell(0);
+            var cell2 =row.insertCell(1);
+            cell1.innerHTML = text[i].state;
+            cell2.innerHTML = text[i].capital;
+        }
+      </script>
+</body>
+</html>
